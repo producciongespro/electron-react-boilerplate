@@ -1,0 +1,18 @@
+[
+    {
+        "id":"1",
+        "nombre": "Informática en el aula"
+    },
+    {
+        "id":"2",
+        "nombre": "Lab PNFT"
+    },
+    {
+        "id":"3",
+        "nombre": "Equipo de pruebas"
+    },
+    {
+        "id":"4",
+        "nombre": "Compartido"
+    }
+]

@@ -9,6 +9,7 @@ const JsonLoader = () => {
     
     reader.onload = (e) => {
       const json = JSON.parse(e.target.result);
+      console.log("json", json);
       setData(json);
     };
     
@@ -21,13 +22,14 @@ const JsonLoader = () => {
       {data && (
         <div>
           <h2>Modulos:</h2>
-          <ul>
-            {data.modulos.map((modulo) => (
+          <ol>
+            {
+            data.map((modulo) => (
               <li key={modulo.id}>
-                {modulo.id}: {modulo.nombre}
+                {modulo.nombre}
               </li>
             ))}
-          </ul>
+          </ol>
         </div>
       )}
     </div>
